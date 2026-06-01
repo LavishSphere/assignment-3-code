@@ -65,7 +65,7 @@ class LinearModel(object):
         # *** END CODE HERE ***
 
 
-def run_exp(train_path, ks=[1, 2, 3, 5, 10, 20], filename='plot.png'):
+def run_exp(train_path, ks=[1, 2, 5, 10, 20], filename='plot.png'):
 
     train_x,train_y=util.load_dataset(train_path,add_intercept=True)
     plot_x = np.ones([1000, 2])

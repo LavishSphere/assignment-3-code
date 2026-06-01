@@ -101,8 +101,8 @@ def main(train_path, small_path):
     Run all experiments
     '''
     # *** START CODE HERE ***
-    run_exp(train_path, filename='train_plot.png')
-    run_exp(small_path, filename='small_plot.png')
+    run_exp(train_path, ks=[3, 5, 10, 20], filename='train_plot.png')
+    run_exp(small_path, ks=[1, 2, 5, 10, 20], filename='small_plot.png')
 
     # *** END CODE HERE ***
 
